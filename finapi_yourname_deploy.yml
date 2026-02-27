@@ -93,6 +93,5 @@ steps:
         --resource-group $(resourceGroup) \
         --name $(webAppName) \
         --src-path deploy.zip \
-        --type zip \
-        --restart true # fixes pipeline error
+        --type zip 
   displayName: 'Deploy Artifact to Azure Web App'
